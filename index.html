@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Math Tutor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="main-panel">
+            <div class="status">
+                <span class="dot pulse"></span> AI Ready
+            </div>
+            
+            <div class="topic-selector">
+                <label for="topic-select">Тема обучения:</label>
+                <select id="topic-select">
+                    <option value="all">Все темы (Случайно)</option>
+                    <option value="Алгебра">Линейные уравнения</option>
+                    <option value="Квадратные">Квадратные уравнения</option>
+                    <option value="Геометрия">Площадь фигур</option>
+                    <option value="Объем">Объем тел</option>
+                    <option value="Проценты">Проценты</option>
+                </select>
+            </div>
+
+            <div id="task-box">
+                <h1 id="question">Нажмите кнопку, чтобы создать задачу...</h1>
+                <div id="options-container" class="options-grid"></div>
+            </div>
+
+            <div id="ai-hint-container" class="hint-box hidden">
+                <p><strong>💡 Подсказка ИИ:</strong> <span id="ai-hint-text"></span></p>
+            </div>
+
+            <div class="controls">
+                <button id="generate-btn" class="btn btn-primary">Сгенерировать задачу (AI)</button>
+                <button id="next-btn" class="btn btn-secondary hidden">Следующая задача →</button>
+            </div>
+            <p class="author">AI Yerassyl</p>
+        </section>
+
+        <aside class="sidebar">
+            <div id="formula-reference" class="formula-card">
+                <h3>Загрузка справочника...</h3>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
